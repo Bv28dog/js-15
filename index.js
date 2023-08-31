@@ -1,2 +1,2 @@
 const hulk = 'warrior'
-console.log(hulk);
+console.log(hulk-warrior);
