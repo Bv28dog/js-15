@@ -36,7 +36,6 @@ function calculate(callback, ...args) {
     return result;
 }
 
-
 const additionResult = calculate((x, y) => x + y, 8, 2, 3, 4); 
 console.log(additionResult); 
 
@@ -49,4 +48,17 @@ console.log(multiplicationResult);
 const divisionResult = calculate((x, y) => x / y, 100, 2, 2); 
 console.log(divisionResult); 
 
+
+const fib = (n) => {
+    const sequence = [1, 1]; 
+    for (let i = 2; i < n; i++) {
+    const nextFib = sequence[i - 1] + sequence[i - 2];
+      sequence.push(nextFib);
+    }
+
+    return sequence;
+  };
+  const n = 5;
+  const result = fib(n);
+  console.log(result.join(' ')); 
 
